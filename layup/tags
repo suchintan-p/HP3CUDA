@@ -1,0 +1,202 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+Activation	src/layers.cpp	/^Activation::Activation(Layer *prev, cudnnActivationMode_t activationMode,$/;"	f	class:Activation
+Activation	src/layers.hpp	/^class Activation : public Layer$/;"	c
+BINDIR	Makefile	/^BINDIR = bin$/;"	m
+COMMON_OBJ	Makefile	/^COMMON_OBJ = $(CPP_OBJ) $(CUDA_OBJ) $(CUDA_OBJ_FILES)$/;"	m
+CONV_OBJ	Makefile	/^CONV_OBJ = $(addprefix $(OBJDIR)\/conv-, $(addsuffix .o, $(CPP_MAIN)))$/;"	m
+CPP_FILES	Makefile	/^CPP_FILES = model.cpp layers.cpp$/;"	m
+CPP_MAIN	Makefile	/^CPP_MAIN = main.cpp$/;"	m
+CPP_OBJ	Makefile	/^CPP_OBJ = $(addprefix $(OBJDIR)\/, $(addsuffix .o, $(CPP_FILES)))$/;"	m
+CUBLAS_CALL	src/helper_cuda.h	61;"	d
+CUDA_BIN_PATH	Makefile	/^CUDA_BIN_PATH = $(CUDA_PATH)\/bin$/;"	m
+CUDA_CALL	src/helper_cuda.h	45;"	d
+CUDA_FILES	Makefile	/^CUDA_FILES = utils.cu$/;"	m
+CUDA_INC_PATH	Makefile	/^CUDA_INC_PATH = $(CUDA_PATH)\/include$/;"	m
+CUDA_LIBS	Makefile	/^CUDA_LIBS = -L$(CUDA_LIB_PATH) -lcudart -lcufft -lcublas -lcudnn -lcurand$/;"	m
+CUDA_LIB_PATH	Makefile	/^CUDA_LIB_PATH = $(CUDA_PATH)\/lib64$/;"	m
+CUDA_LINK_FLAGS	Makefile	/^CUDA_LINK_FLAGS = -dlink -Wno-deprecated-gpu-targets$/;"	m
+CUDA_OBJ	Makefile	/^CUDA_OBJ = $(OBJDIR)\/cuda.o$/;"	m
+CUDA_OBJ_FILES	Makefile	/^CUDA_OBJ_FILES = $(addprefix $(OBJDIR)\/, $(addsuffix .o, $(CUDA_FILES)))$/;"	m
+CUDA_PATH	Makefile	/^CUDA_PATH = \/usr\/local\/cuda$/;"	m
+CUDNN_CALL	src/helper_cuda.h	69;"	d
+CURAND_CALL	src/helper_cuda.h	53;"	d
+Conv2D	src/layers.cpp	/^Conv2D::Conv2D(Layer *prev, int n_kernels, int kernel_size, int stride,$/;"	f	class:Conv2D
+Conv2D	src/layers.hpp	/^class Conv2D : public Layer$/;"	c
+DENSE_OBJ	Makefile	/^DENSE_OBJ = $(addprefix $(OBJDIR)\/dense-, $(addsuffix .o, $(CPP_MAIN)))$/;"	m
+DEVICE_RESET	src/helper_cuda.h	1031;"	d
+DEVICE_RESET	src/helper_cuda.h	1035;"	d
+Dense	src/layers.cpp	/^Dense::Dense(Layer *prev, int out_dim,$/;"	f	class:Dense
+Dense	src/layers.hpp	/^class Dense : public Layer$/;"	c
+EXIT_WAIVED	src/helper_cuda.h	27;"	d
+FLAGS	Makefile	/^FLAGS = -g -Wall -D_REENTRANT -std=c++11 -pthread$/;"	m
+FatalError	src/helper_cuda.h	36;"	d
+GPP	Makefile	/^GPP = g++$/;"	m
+GetCategoryData	src/MNISTParser.h	/^    const uint8_t* GetCategoryData() const$/;"	f	class:final
+GetImageCount	src/MNISTParser.h	/^    int GetImageCount() const$/;"	f	class:final
+GetImageData	src/MNISTParser.h	/^    const float* GetImageData() const$/;"	f	class:final
+GetImageHeight	src/MNISTParser.h	/^    int GetImageHeight() const$/;"	f	class:final
+GetImageSize	src/MNISTParser.h	/^    int GetImageSize() const$/;"	f	class:final
+GetImageWidth	src/MNISTParser.h	/^    int GetImageWidth() const$/;"	f	class:final
+HELPER_CUDA_H	src/helper_cuda.h	16;"	d
+INCLUDE	Makefile	/^INCLUDE = -I$(CUDA_INC_PATH)$/;"	m
+Initialize	src/MNISTParser.h	/^    void Initialize(const int width, const int height, const int count)$/;"	f	class:final
+Input	src/layers.cpp	/^Input::Input(int n, int c, int h, int w,$/;"	f	class:Input
+Input	src/layers.hpp	/^class Input : public Layer$/;"	c
+Layer	src/layers.cpp	/^Layer::Layer(Layer *prev, cublasHandle_t cublasHandle,$/;"	f	class:Layer
+Layer	src/layers.hpp	/^class Layer$/;"	c
+LoadMNISTData	src/MNISTParser.h	/^void LoadMNISTData(std::string image_fname, std::string label_fname,$/;"	f
+Loss	src/layers.cpp	/^Loss::Loss(Layer *prev, cublasHandle_t cublasHandle, cudnnHandle_t cudnnHandle)$/;"	f	class:Loss
+Loss	src/layers.hpp	/^class Loss : public Layer {$/;"	c
+MAX	src/helper_cuda.h	1074;"	d
+MNISTDataset	src/MNISTParser.h	/^    MNISTDataset()$/;"	f	class:final
+Model	src/model.cpp	/^Model::Model(int n, int c, int h, int w) {$/;"	f	class:Model
+Model	src/model.hpp	/^class Model {$/;"	c
+NVCC	Makefile	/^NVCC = $(CUDA_BIN_PATH)\/nvcc$/;"	m
+NVCC_CUDA_LIBS	Makefile	/^NVCC_CUDA_LIBS = $/;"	m
+NVCC_FLAGS	Makefile	/^	NVCC_FLAGS := -m32$/;"	m
+NVCC_FLAGS	Makefile	/^	NVCC_FLAGS := -m64$/;"	m
+NVCC_GENCODES	Makefile	/^NVCC_GENCODES = -gencode arch=compute_30,code=sm_30 \\$/;"	m
+NVCC_INCLUDE	Makefile	/^NVCC_INCLUDE =$/;"	m
+OBJDIR	Makefile	/^OBJDIR = obj$/;"	m
+Parse	src/MNISTParser.h	/^    int Parse(const char* imageFile, const char* labelFile, bool verbose)$/;"	f	class:final
+Pool2D	src/layers.cpp	/^Pool2D::Pool2D(Layer* prev, int stride, cudnnPoolingMode_t mode,$/;"	f	class:Pool2D
+Pool2D	src/layers.hpp	/^class Pool2D : public Layer$/;"	c
+Print	src/MNISTParser.h	/^    void Print()$/;"	f	class:final
+SRCDIR	Makefile	/^SRCDIR = src$/;"	m
+SoftmaxCrossEntropy	src/layers.cpp	/^SoftmaxCrossEntropy::SoftmaxCrossEntropy(Layer *prev,$/;"	f	class:SoftmaxCrossEntropy
+SoftmaxCrossEntropy	src/layers.hpp	/^class SoftmaxCrossEntropy : public Loss {$/;"	c
+_ConvertSMVer2Cores	src/helper_cuda.h	/^inline int _ConvertSMVer2Cores(int major, int minor)$/;"	f
+__getLastCudaError	src/helper_cuda.h	/^inline void __getLastCudaError(const char *errorMessage, const char *file, const int line)$/;"	f
+_cudaGetErrorEnum	src/helper_cuda.h	/^static const char *_cudaGetErrorEnum(CUresult error)$/;"	f
+_cudaGetErrorEnum	src/helper_cuda.h	/^static const char *_cudaGetErrorEnum(NppStatus error)$/;"	f
+_cudaGetErrorEnum	src/helper_cuda.h	/^static const char *_cudaGetErrorEnum(cublasStatus_t error)$/;"	f
+_cudaGetErrorEnum	src/helper_cuda.h	/^static const char *_cudaGetErrorEnum(cudaError_t error)$/;"	f
+_cudaGetErrorEnum	src/helper_cuda.h	/^static const char *_cudaGetErrorEnum(cufftResult error)$/;"	f
+_cudaGetErrorEnum	src/helper_cuda.h	/^static const char *_cudaGetErrorEnum(curandStatus_t error)$/;"	f
+_cudaGetErrorEnum	src/helper_cuda.h	/^static const char *_cudaGetErrorEnum(cusolverStatus_t error)$/;"	f
+_cudaGetErrorEnum	src/helper_cuda.h	/^static const char *_cudaGetErrorEnum(cusparseStatus_t error)$/;"	f
+_result	src/model.hpp	/^typedef struct _result {$/;"	s
+acc	src/layers.hpp	/^    float acc = 0;$/;"	m	class:Loss
+acc	src/model.hpp	/^    float acc;$/;"	m	struct:_result
+activation_desc	src/layers.hpp	/^    cudnnActivationDescriptor_t activation_desc;$/;"	m	class:Activation
+add	src/model.cpp	/^void Model::add(std::string layer, std::vector<int> shape)$/;"	f	class:Model
+allocate_buffers	src/layers.cpp	/^void Layer::allocate_buffers()$/;"	f	class:Layer
+backward_pass	src/layers.cpp	/^void Activation::backward_pass(float learning_rate)$/;"	f	class:Activation
+backward_pass	src/layers.cpp	/^void Conv2D::backward_pass(float learning_rate)$/;"	f	class:Conv2D
+backward_pass	src/layers.cpp	/^void Dense::backward_pass(float learning_rate)$/;"	f	class:Dense
+backward_pass	src/layers.cpp	/^void Input::backward_pass(float learning_rate) {}$/;"	f	class:Input
+backward_pass	src/layers.cpp	/^void Pool2D::backward_pass(float learning_rate)$/;"	f	class:Pool2D
+backward_pass	src/layers.cpp	/^void SoftmaxCrossEntropy::backward_pass(float lr)$/;"	f	class:SoftmaxCrossEntropy
+batch_size	src/layers.hpp	/^    int batch_size;$/;"	m	class:Dense
+batch_size	src/model.hpp	/^    int batch_size;$/;"	m	class:Model
+bias_desc	src/layers.hpp	/^    cudnnTensorDescriptor_t bias_desc;$/;"	m	class:Conv2D
+biases	src/layers.hpp	/^    float *biases = nullptr;$/;"	m	class:Layer
+bwd_data_algo	src/layers.hpp	/^    cudnnConvolutionBwdDataAlgo_t bwd_data_algo;$/;"	m	class:Conv2D
+bwd_filter_algo	src/layers.hpp	/^    cudnnConvolutionBwdFilterAlgo_t bwd_filter_algo;$/;"	m	class:Conv2D
+c_categoryCount	src/MNISTParser.h	/^    static const int c_categoryCount = 10;$/;"	m	class:final
+check	src/helper_cuda.h	/^void check(T result, char const *const func, const char *const file, int const line)$/;"	f
+checkCudaCapabilities	src/helper_cuda.h	/^inline bool checkCudaCapabilities(int major_version, int minor_version)$/;"	f
+checkCudaErrors	src/helper_cuda.h	1054;"	d
+conv_desc	src/layers.hpp	/^    cudnnConvolutionDescriptor_t conv_desc;$/;"	m	class:Conv2D
+copy_input_batch	src/model.cpp	/^void Model::copy_input_batch(const float *batch_X)$/;"	f	class:Model
+copy_output_batch	src/model.cpp	/^void Model::copy_output_batch(const float *batch_Y)$/;"	f	class:Model
+cublasHandle	src/layers.hpp	/^    cublasHandle_t cublasHandle;$/;"	m	class:Layer
+cublasHandle	src/model.hpp	/^    cublasHandle_t cublasHandle;$/;"	m	class:Model
+cudnnHandle	src/layers.hpp	/^    cudnnHandle_t cudnnHandle;$/;"	m	class:Layer
+cudnnHandle	src/model.hpp	/^    cudnnHandle_t cudnnHandle;$/;"	m	class:Model
+evaluate	src/model.cpp	/^result *Model::evaluate(const float *eval_X, float *eval_Y, int n_examples)$/;"	f	class:Model
+evaluate_on_batch	src/model.cpp	/^result *Model::evaluate_on_batch(const float *batch_X, float *batch_Y) {$/;"	f	class:Model
+filter_desc	src/layers.hpp	/^    cudnnFilterDescriptor_t filter_desc;$/;"	m	class:Conv2D
+final	src/MNISTParser.h	/^class MNISTDataset final$/;"	c
+forward_pass	src/layers.cpp	/^void Activation::forward_pass()$/;"	f	class:Activation
+forward_pass	src/layers.cpp	/^void Conv2D::forward_pass()$/;"	f	class:Conv2D
+forward_pass	src/layers.cpp	/^void Dense::forward_pass()$/;"	f	class:Dense
+forward_pass	src/layers.cpp	/^void Input::forward_pass() {}$/;"	f	class:Input
+forward_pass	src/layers.cpp	/^void Pool2D::forward_pass()$/;"	f	class:Pool2D
+forward_pass	src/layers.cpp	/^void SoftmaxCrossEntropy::forward_pass()$/;"	f	class:SoftmaxCrossEntropy
+ftoi	src/helper_cuda.h	/^inline int ftoi(float value)$/;"	f
+fwd_algo	src/layers.hpp	/^    cudnnConvolutionFwdAlgo_t fwd_algo;$/;"	m	class:Conv2D
+getLastCudaError	src/helper_cuda.h	1057;"	d
+get_accuracy	src/layers.cpp	/^float Layer::get_accuracy()$/;"	f	class:Layer
+get_accuracy	src/layers.cpp	/^float SoftmaxCrossEntropy::get_accuracy()$/;"	f	class:SoftmaxCrossEntropy
+get_in_shape	src/layers.cpp	/^cudnnTensorDescriptor_t Layer::get_in_shape() const$/;"	f	class:Layer
+get_input_bwd	src/layers.cpp	/^float *Layer::get_input_bwd() const$/;"	f	class:Layer
+get_loss	src/layers.cpp	/^float Layer::get_loss()$/;"	f	class:Layer
+get_loss	src/layers.cpp	/^float SoftmaxCrossEntropy::get_loss()$/;"	f	class:SoftmaxCrossEntropy
+get_out_shape	src/layers.cpp	/^cudnnTensorDescriptor_t Layer::get_out_shape() const$/;"	f	class:Layer
+get_output_batch_size	src/model.cpp	/^int Model::get_output_batch_size(Layer *layer) const$/;"	f	class:Model
+get_output_fwd	src/layers.cpp	/^float *Layer::get_output_fwd() const$/;"	f	class:Layer
+get_prev	src/layers.cpp	/^Layer *Layer::get_prev() const$/;"	f	class:Layer
+get_workspace_size	src/layers.cpp	/^size_t Conv2D::get_workspace_size() const$/;"	f	class:Conv2D
+get_workspace_size	src/layers.cpp	/^size_t Layer::get_workspace_size() const$/;"	f	class:Layer
+gpuDeviceInit	src/helper_cuda.h	/^inline int gpuDeviceInit(int devID)$/;"	f
+gpuGetMaxGflopsDeviceId	src/helper_cuda.h	/^inline int gpuGetMaxGflopsDeviceId()$/;"	f
+grad_biases	src/layers.hpp	/^    float *grad_biases = nullptr;$/;"	m	class:Layer
+grad_in_batch	src/layers.hpp	/^    float *grad_in_batch = nullptr;$/;"	m	class:Layer
+grad_out_batch	src/layers.hpp	/^    float *grad_out_batch = nullptr;$/;"	m	class:Layer
+grad_weights	src/layers.hpp	/^    float *grad_weights = nullptr;$/;"	m	class:Layer
+has_loss	src/model.hpp	/^    bool has_loss;$/;"	m	class:Model
+in_batch	src/layers.hpp	/^    float *in_batch = nullptr;$/;"	m	class:Layer
+in_shape	src/layers.hpp	/^    cudnnTensorDescriptor_t in_shape;$/;"	m	class:Layer
+in_size	src/layers.hpp	/^    int in_size;$/;"	m	class:Dense
+init_weights_biases	src/layers.cpp	/^void Layer::init_weights_biases()$/;"	f	class:Layer
+init_workspace	src/model.cpp	/^void Model::init_workspace()$/;"	f	class:Model
+input_size	src/model.hpp	/^    int input_size = 0;$/;"	m	class:Model
+layers	src/model.hpp	/^    std::vector<Layer *> *layers;$/;"	m	class:Model
+loss	src/layers.hpp	/^    float loss = 0;$/;"	m	class:Loss
+loss	src/model.hpp	/^    float loss;$/;"	m	struct:_result
+m_buffer	src/MNISTParser.h	/^    float* m_buffer;$/;"	m	class:final
+m_categoryBuffer	src/MNISTParser.h	/^    uint8_t* m_categoryBuffer;$/;"	m	class:final
+m_count	src/MNISTParser.h	/^    int m_count;$/;"	m	class:final
+m_height	src/MNISTParser.h	/^    int m_height;$/;"	m	class:final
+m_imageBuffer	src/MNISTParser.h	/^    float* m_imageBuffer;$/;"	m	class:final
+m_imageSize	src/MNISTParser.h	/^    int m_imageSize;$/;"	m	class:final
+m_width	src/MNISTParser.h	/^    int m_width;$/;"	m	class:final
+main	src/main.cpp	/^int main(int argc, char **argv)$/;"	f
+n_biases	src/layers.hpp	/^    int n_biases = 0;$/;"	m	class:Layer
+n_weights	src/layers.hpp	/^    int n_weights = 0;$/;"	m	class:Layer
+onevec	src/layers.hpp	/^    float *onevec;$/;"	m	class:Dense
+out_batch	src/layers.hpp	/^    float *out_batch = nullptr;$/;"	m	class:Layer
+out_shape	src/layers.hpp	/^    cudnnTensorDescriptor_t out_shape;$/;"	m	class:Layer
+out_size	src/layers.hpp	/^    int out_size;$/;"	m	class:Dense
+override	src/layers.hpp	/^    float get_accuracy() override;$/;"	m	class:SoftmaxCrossEntropy
+override	src/layers.hpp	/^    float get_loss() override;$/;"	m	class:SoftmaxCrossEntropy
+override	src/layers.hpp	/^    size_t get_workspace_size() const override;$/;"	m	class:Conv2D
+override	src/layers.hpp	/^    void backward_pass(float learning_rate) override;$/;"	m	class:Activation
+override	src/layers.hpp	/^    void backward_pass(float learning_rate) override;$/;"	m	class:Conv2D
+override	src/layers.hpp	/^    void backward_pass(float learning_rate) override;$/;"	m	class:Dense
+override	src/layers.hpp	/^    void backward_pass(float learning_rate) override;$/;"	m	class:Input
+override	src/layers.hpp	/^    void backward_pass(float learning_rate) override;$/;"	m	class:Pool2D
+override	src/layers.hpp	/^    void backward_pass(float lr) override;$/;"	m	class:SoftmaxCrossEntropy
+override	src/layers.hpp	/^    void forward_pass() override;$/;"	m	class:Activation
+override	src/layers.hpp	/^    void forward_pass() override;$/;"	m	class:Conv2D
+override	src/layers.hpp	/^    void forward_pass() override;$/;"	m	class:Dense
+override	src/layers.hpp	/^    void forward_pass() override;$/;"	m	class:Input
+override	src/layers.hpp	/^    void forward_pass() override;$/;"	m	class:Pool2D
+override	src/layers.hpp	/^    void forward_pass() override;$/;"	m	class:SoftmaxCrossEntropy
+pooling_desc	src/layers.hpp	/^    cudnnPoolingDescriptor_t pooling_desc;$/;"	m	class:Pool2D
+predict	src/model.cpp	/^float *Model::predict(const float *pred_X, int n_examples)$/;"	f	class:Model
+predict_on_batch	src/model.cpp	/^float *Model::predict_on_batch(const float *batch_X) {$/;"	f	class:Model
+predictions	src/model.hpp	/^    float *predictions;$/;"	m	struct:_result
+prev	src/layers.hpp	/^    Layer *prev;$/;"	m	class:Layer
+result	src/model.hpp	/^} result;$/;"	t	typeref:struct:_result
+set_workspace	src/layers.cpp	/^void Layer::set_workspace(float *workspace, size_t workspace_size)$/;"	f	class:Layer
+train	src/model.cpp	/^void Model::train(const float *train_X, float *train_Y, float lr, int n_examples,$/;"	f	class:Model
+train_on_batch	src/model.cpp	/^void Model::train_on_batch(const float *batch_X, float *batch_Y, float lr)$/;"	f	class:Model
+weights	src/layers.hpp	/^    float *weights = nullptr;$/;"	m	class:Layer
+workspace	src/layers.hpp	/^    float *workspace = nullptr;$/;"	m	class:Layer
+workspace	src/model.hpp	/^    float *workspace = nullptr;$/;"	m	class:Model
+workspace_size	src/layers.hpp	/^    size_t workspace_size = 0;$/;"	m	class:Layer
+workspace_size	src/model.hpp	/^    size_t workspace_size = 0;$/;"	m	class:Model
+~Activation	src/layers.cpp	/^Activation::~Activation()$/;"	f	class:Activation
+~Conv2D	src/layers.cpp	/^Conv2D::~Conv2D()$/;"	f	class:Conv2D
+~Dense	src/layers.cpp	/^Dense::~Dense()$/;"	f	class:Dense
+~Layer	src/layers.cpp	/^Layer::~Layer()$/;"	f	class:Layer
+~MNISTDataset	src/MNISTParser.h	/^    ~MNISTDataset()$/;"	f	class:final
+~Model	src/model.cpp	/^Model::~Model() {$/;"	f	class:Model
+~Pool2D	src/layers.cpp	/^Pool2D::~Pool2D()$/;"	f	class:Pool2D

@@ -1,0 +1,399 @@
+Layer Number : 0
+Time Taken compute = 0.024831999093294
+Time Taken compute cumulative = 0.024831999093294
+Ouput Size : 94080
+Layer Number : 0
+Time Taken transfer = 0.363743990659714
+Thresh = 14.648196220397949
+Cumulative Thresh = 14.648196220397949
+CHECKPOINT AT LAYER 0
+
+Layer Number : 1
+Time Taken compute = 35.518718719482422
+Time Taken compute cumulative = 35.518718719482422
+Input Size : 94080
+Ouput Size : 392263680
+Layer Number : 1
+Time Taken transfer = 1163.354980468750000
+Thresh = 32.753292083740234
+Cumulative Thresh = 32.753292083740234
+
+Layer Number : 2
+Time Taken compute = 6.046463966369629
+Time Taken compute cumulative = 41.565182685852051
+Input Size : 392263680
+Ouput Size : 98065920
+Layer Number : 2
+Time Taken transfer = 284.369781494140625
+Thresh = 47.030757904052734
+Cumulative Thresh = 6.841537952423096
+
+Layer Number : 3
+Time Taken compute = 2.655040025711060
+Time Taken compute cumulative = 44.220222711563110
+Input Size : 98065920
+Ouput Size : 98065920
+Layer Number : 3
+Time Taken transfer = 283.915527343750000
+Thresh = 106.934555053710938
+Cumulative Thresh = 6.420490741729736
+
+Layer Number : 4
+Time Taken compute = 18.187328338623047
+Time Taken compute cumulative = 62.407551050186157
+Input Size : 98065920
+Ouput Size : 98065920
+Layer Number : 4
+Time Taken transfer = 286.466796875000000
+Thresh = 15.750900268554688
+Cumulative Thresh = 4.590258598327637
+
+Layer Number : 5
+Time Taken compute = 2.654335975646973
+Time Taken compute cumulative = 65.061887025833130
+Input Size : 98065920
+Ouput Size : 98065920
+Layer Number : 5
+Time Taken transfer = 284.243164062500000
+Thresh = 107.086357116699219
+Cumulative Thresh = 4.368812084197998
+
+Layer Number : 6
+Time Taken compute = 1.786623954772949
+Time Taken compute cumulative = 66.848510980606079
+Input Size : 98065920
+Ouput Size : 24084480
+Layer Number : 6
+Time Taken transfer = 69.452064514160156
+Thresh = 38.873352050781250
+Cumulative Thresh = 1.038947105407715
+
+Layer Number : 7
+Time Taken compute = 6.527103900909424
+Time Taken compute cumulative = 73.375614881515503
+Input Size : 24084480
+Ouput Size : 48168960
+Layer Number : 7
+Time Taken transfer = 138.441574096679688
+Thresh = 21.210260391235352
+Cumulative Thresh = 1.886751770973206
+
+Layer Number : 8
+Time Taken compute = 1.452415943145752
+Time Taken compute cumulative = 74.828030824661255
+Input Size : 48168960
+Ouput Size : 48168960
+Layer Number : 8
+Time Taken transfer = 137.848281860351562
+Thresh = 94.909645080566406
+Cumulative Thresh = 1.842201113700867
+
+Layer Number : 9
+Time Taken compute = 15.962559700012207
+Time Taken compute cumulative = 90.790590524673462
+Input Size : 48168960
+Ouput Size : 48168960
+Layer Number : 9
+Time Taken transfer = 150.232833862304688
+Thresh = 9.411575317382812
+Cumulative Thresh = 1.654718160629272
+
+Layer Number : 10
+Time Taken compute = 1.933791995048523
+Time Taken compute cumulative = 92.724382519721985
+Input Size : 48168960
+Ouput Size : 48168960
+Layer Number : 10
+Time Taken transfer = 166.854873657226562
+Thresh = 86.283775329589844
+Cumulative Thresh = 1.799471378326416
+
+Layer Number : 11
+Time Taken compute = 1.309440016746521
+Time Taken compute cumulative = 94.033822536468506
+Input Size : 48168960
+Ouput Size : 12042240
+Layer Number : 11
+Time Taken transfer = 40.427806854248047
+Thresh = 30.874118804931641
+Cumulative Thresh = 0.429928362369537
+CHECKPOINT AT LAYER 11
+
+Layer Number : 12
+Time Taken compute = 4.650559902191162
+Time Taken compute cumulative = 4.650559902191162
+Input Size : 12042240
+Ouput Size : 24084480
+Layer Number : 12
+Time Taken transfer = 79.724960327148438
+Thresh = 17.143089294433594
+Cumulative Thresh = 17.143089294433594
+
+Layer Number : 13
+Time Taken compute = 1.050016045570374
+Time Taken compute cumulative = 5.700575947761536
+Input Size : 24084480
+Ouput Size : 24084480
+Layer Number : 13
+Time Taken transfer = 80.368225097656250
+Thresh = 76.540000915527344
+Cumulative Thresh = 14.098263740539551
+
+Layer Number : 14
+Time Taken compute = 7.026400089263916
+Time Taken compute cumulative = 12.726976037025452
+Input Size : 24084480
+Ouput Size : 24084480
+Layer Number : 14
+Time Taken trnsfer = 81.507453918457031
+Thresh = 11.600172996520996
+Cumulative Thresh = 6.404306411743164
+
+Layer Number : 15
+Time Taken compute = 1.110015988349915
+Time Taken compute cumulative = 13.836992025375366
+Input Size : 24084480
+Ouput Size : 24084480
+Layer Number : 15
+Time Taken transfer = 81.931327819824219
+Thresh = 73.810943603515625
+Cumulative Thresh = 5.921180725097656
+
+Layer Number : 16
+Time Taken compute = 6.774015903472900
+Time Taken compute cumulative = 20.611007928848267
+Input Size : 24084480
+Ouput Size : 24084480
+Layer Number : 16
+Time Taken transfer = 69.851043701171875
+Thresh = 10.311614990234375
+Cumulative Thresh = 3.389016389846802
+
+Layer Number : 17
+Time Taken compute = 0.885631978511810
+Time Taken compute cumulative = 21.496639907360077
+Input Size : 24084480
+Ouput Size : 24084480
+Layer Number : 17
+Time Taken transfer = 70.182754516601562
+Thresh = 79.245956420898438
+Cumulative Thresh = 3.264824390411377
+
+Layer Number : 18
+Time Taken compute = 0.688192009925842
+Time Taken compute cumulative = 22.184831917285919
+Input Size : 24084480
+Ouput Size : 6021120
+Layer Number : 18
+Time Taken transfer = 17.410591125488281
+Thresh = 25.299030303955078
+Cumulative Thresh = 0.784797072410583
+CHECKPOINT AT LAYER 18
+
+Layer Number : 19
+Time Taken compute = 4.013184070587158
+Time Taken compute cumulative = 4.013184070587158
+Input Size : 6021120
+Ouput Size : 12042240
+Layer Number : 19
+Time Taken transfer = 35.587039947509766
+Thresh = 8.867532730102539
+Cumulative Thresh = 8.867532730102539
+
+Layer Number : 20
+Time Taken compute = 0.615487992763519
+Time Taken compute cumulative = 4.628672063350677
+Input Size : 12042240
+Ouput Size : 12042240
+Layer Number : 20
+Time Taken transfer = 35.592224121093750
+Thresh = 57.827648162841797
+Cumulative Thresh = 7.689510822296143
+
+Layer Number : 21
+Time Taken compute = 6.650879859924316
+Time Taken compute cumulative = 11.279551923274994
+Input Size : 12042240
+Ouput Size : 12042240
+Layer Number : 21
+Time Taken transfer = 35.418464660644531
+Thresh = 5.325380325317383
+Cumulative Thresh = 3.140059471130371
+
+Layer Number : 22
+Time Taken compute = 0.601920008659363
+Time Taken compute cumulative = 11.881471931934357
+Input Size : 12042240
+Ouput Size : 12042240
+Layer Number : 22
+Time Taken transfer = 35.073600769042969
+Thresh = 58.269538879394531
+Cumulative Thresh = 2.951957464218140
+
+Layer Number : 23
+Time Taken compute = 6.642848014831543
+Time Taken compute cumulative = 18.524319946765900
+Input Size : 12042240
+Ouput Size : 12042240
+Layer Number : 23
+Time Taken transfer = 35.424961090087891
+Thresh = 5.332797050476074
+Cumulative Thresh = 1.912348747253418
+
+Layer Number : 24
+Time Taken compute = 0.550880014896393
+Time Taken compute cumulative = 19.075199961662292
+Input Size : 12042240
+Ouput Size : 12042240
+Layer Number : 24
+Time Taken transfer = 35.782623291015625
+Thresh = 64.955383300781250
+Cumulative Thresh = 1.875871419906616
+
+Layer Number : 25
+Time Taken compute = 0.483999997377396
+Time Taken compute cumulative = 19.559199959039688
+Input Size : 12042240
+Ouput Size : 3010560
+Layer Number : 25
+Time Taken transfer = 8.543999671936035
+Thresh = 17.652891159057617
+Cumulative Thresh = 0.436827659606934
+CHECKPOINT AT LAYER 25
+
+Layer Number : 26
+Time Taken compute = 4.440576076507568
+Time Taken compute cumulative = 4.440576076507568
+Input Size : 3010560
+Ouput Size : 3010560
+Layer Number : 26
+Time Taken transfer = 2.613023996353149
+Thresh = 0.588442564010620
+Cumulative Thresh = 0.588442564010620
+CHECKPOINT AT LAYER 26
+
+Layer Number : 27
+Time Taken compute = 0.342496007680893
+Time Taken compute cumulative = 0.342496007680893
+Input Size : 3010560
+Ouput Size : 3010560
+Layer Number : 27
+Time Taken transfer = 2.674240112304688
+Thresh = 7.808091163635254
+Cumulative Thresh = 7.808091163635254
+
+Layer Number : 28
+Time Taken compute = 4.379712104797363
+Time Taken compute cumulative = 4.722208112478256
+Input Size : 3010560
+Ouput Size : 3010560
+Layer Number : 28
+Time Taken transfer = 2.666111946105957
+Thresh = 0.608741343021393
+Cumulative Thresh = 0.564590096473694
+CHECKPOINT AT LAYER 28
+
+Layer Number : 29
+Time Taken compute = 0.304224014282227
+Time Taken compute cumulative = 0.304224014282227
+Input Size : 3010560
+Ouput Size : 3010560
+Layer Number : 29
+Time Taken transfer = 2.854880094528198
+Thresh = 9.384138107299805
+Cumulative Thresh = 9.384138107299805
+
+Layer Number : 30
+Time Taken compute = 4.513823986053467
+Time Taken compute cumulative = 4.818048000335693
+Input Size : 3010560
+Ouput Size : 3010560
+Layer Number : 30
+Time Taken transfer = 2.627487897872925
+Thresh = 0.582098007202148
+Cumulative Thresh = 0.545342803001404
+CHECKPOINT AT LAYER 30
+
+Layer Number : 31
+Time Taken compute = 0.313951998949051
+Time Taken compute cumulative = 0.313951998949051
+Input Size : 3010560
+Ouput Size : 3010560
+Layer Number : 31
+Time Taken transfer = 2.615904092788696
+Thresh = 8.332178115844727
+Cumulative Thresh = 8.332178115844727
+
+Layer Number : 32
+Time Taken compute = 0.273216009140015
+Time Taken compute cumulative = 0.587168008089066
+Input Size : 3010560
+Ouput Size : 552960
+Layer Number : 32
+Time Taken transfer = 0.604384005069733
+Thresh = 2.212110519409180
+Cumulative Thresh = 1.029320359230042
+
+Layer Number : 33
+Time Taken compute = 1.172031998634338
+Time Taken compute cumulative = 1.759200006723404
+Input Size : 552960
+Ouput Size : 491520
+Layer Number : 33
+Time Taken transfer = 0.556703984737396
+Thresh = 0.474990427494049
+Cumulative Thresh = 0.316452920436859
+CHECKPOINT AT LAYER 33
+
+Layer Number : 34
+Time Taken compute = 0.227392002940178
+Time Taken compute cumulative = 0.227392002940178
+Input Size : 491520
+Ouput Size : 491520
+Layer Number : 34
+Time Taken transfer = 0.552384018898010
+Thresh = 2.429214715957642
+Cumulative Thresh = 2.429214715957642
+
+Layer Number : 35
+Time Taken compute = 0.884223997592926
+Time Taken compute cumulative = 1.111616000533104
+Input Size : 491520
+Ouput Size : 491520
+Layer Number : 35
+Time Taken transfer = 0.525951981544495
+Thresh = 0.594817578792572
+Cumulative Thresh = 0.473141789436340
+CHECKPOINT AT LAYER 35
+
+Layer Number : 36
+Time Taken compute = 0.240511998534203
+Time Taken compute cumulative = 0.240511998534203
+Input Size : 491520
+Ouput Size : 491520
+Layer Number : 36
+Time Taken transfer = 0.531903982162476
+Thresh = 2.211548566818237
+Cumulative Thresh = 2.211548566818237
+
+Layer Number : 37
+Time Taken compute = 0.192767992615700
+Time Taken compute cumulative = 0.433279991149902
+Input Size : 491520
+Ouput Size : 1200
+Layer Number : 37
+Time Taken transfer = 0.023711999878287
+Thresh = 0.123007975518703
+Cumulative Thresh = 0.054726734757423
+CHECKPOINT AT LAYER 37
+
+Layer Number : 38
+Time Taken compute = 0.039840001612902
+Time Taken compute cumulative = 0.039840001612902
+Input Size : 1200
+Ouput Size : 1200
+Layer Number : 38
+Time Taken transfer = 0.020191999152303
+Thresh = 0.506827294826508
+Cumulative Thresh = 0.506827294826508
+CHECKPOINT AT LAYER 38

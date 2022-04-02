@@ -1,9 +1,3 @@
-/**
- * Header file for CUDA-implemented utilities needed by the neural net
- * @author Aadyot Bhatngar
- * @date April 22, 2018
- */
-
 #pragma once
 
 #include <cuda_runtime.h>

@@ -1,20 +1,3 @@
-/*
- *  Copyright 2014 Henry Tan
- *  Modified 2018 by Aadyot Bhatngar
- *
- *  Licensed under the Apache License, Version 2.0 (the "License");
- *  you may not use this file except in compliance with the License.
- *  You may obtain a copy of the License at
- *
- *  http ://www.apache.org/licenses/LICENSE-2.0
- *
- *  Unless required by applicable law or agreed to in writing, software
- *  distributed under the License is distributed on an "AS IS" BASIS,
- *  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
- *  See the License for the specific language governing permissions and
- *  limitations under the License.
- */
-
 #pragma once
 #include <stdio.h>
 #include <stdlib.h>
@@ -96,11 +79,6 @@ public:
         return m_categoryBuffer;
     }
 
-    //
-    // Parse MNIST dataset
-    // Specification of the dataset can be found in:
-    // http://yann.lecun.com/exdb/mnist/
-    //
     int Parse(const char* imageFile, const char* labelFile, bool verbose)
     {
         FILE* fimg = fopen(imageFile, "rb");
@@ -219,13 +197,7 @@ public:
             }
 
             uint8_t cat;
-            if (fread(&cat, sizeof(uint8_t), 1, flabel) != 1)
-            {
-                printf("Failed to read label for image %d in %s", counter,
-                        imageFile);
-                return 1;
-            }
-            // assert(cat >= 0 && cat < c_categoryCount);
+            fread(&cat, sizeof(uint8_t), 1, flabel);
             m_categoryBuffer[counter] = cat;
 
             ++counter;
@@ -266,20 +238,7 @@ private:
     static const int c_categoryCount = 10;
 };
 
-/**
- * Reads a dataset of images stored in an MNIST-style format from the specified
- * image and label files, and stores it in buffers that live in memory.
- *
- * @param image_fname name of file containing image data
- * @param label_fname name of file containing label data
- * @param n_images number of images in data set (set by reference)
- * @param c number of channels in each image in data set (set by reference)
- * @param h height of each image in data set (set by reference)
- * @param w width of each image in data set (set by reference)
- * @param n_classes number of clases in data set (set by reference)
- * @param image_data pointer to buffer that will contain loaded image data
- * @param label_data pointer to buffer that will contain loaded label data
- */
+
 void LoadMNISTData(std::string image_fname, std::string label_fname,
     int &n_images, int &c, int &h, int &w, int &n_classes,
     float **image_data, float **label_data, bool verbose = true)
