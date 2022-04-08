@@ -203,7 +203,9 @@ void Model::train(const float *train_X, float *train_Y, float lr, int n_examples
             float *curr_batch_Y = train_Y + curr_batch * out_size;
             if(pre_allocate_gpu)
             {
-                train_on_batch(curr_batch_X, curr_batch_Y, lr,&loss,&acc); //original behvaviour.
+                train_on_batch(curr_batch_X, curr_batch_Y, lr); //original behvaviour.
+                acc += this->layers->back()->get_accuracy();
+                loss += this->layers->back()->get_loss();
             }
             else
             {
@@ -406,7 +408,7 @@ void Model::cudaFreeUnnecessary()
 }
 
 
-void Model::train_on_batch(const float *batch_X, float *batch_Y, float lr,float *loss,float *acc)
+void Model::train_on_batch(const float *batch_X, float *batch_Y, float lr)
 {
     assert(this->has_loss && "Cannot train without a loss function.");
 
@@ -418,9 +420,6 @@ void Model::train_on_batch(const float *batch_X, float *batch_Y, float lr,float 
     std::vector<Layer *>::iterator it;
     for (it = this->layers->begin(); it != this->layers->end(); ++it)
         (*it)->forward_pass();
-    (*loss) += (*this->layers->rbegin())->get_loss();
-    (*acc) += (*this->layers->rbegin())->get_accuracy();
-
     // Do a backward pass through every layer
     std::vector<Layer *>::reverse_iterator rit;
     for (rit = this->layers->rbegin(); rit != this->layers->rend(); ++rit)
