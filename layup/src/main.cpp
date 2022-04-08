@@ -141,7 +141,7 @@ int main(int argc, char **argv)
 
     // Train the model on the training set for 25 epochs
     std::cout << "Predicting on " << n_classes << " classes." << std::endl;
-    model->profile(train_X, train_Y, 0.03f, n_train, 25, transfer_every_layer);
+    model->profile(train_X, train_Y, 0.03f, n_train, 5, transfer_every_layer);
     // return 0;
     if(!pre_allocate_gpu)
     {
@@ -149,7 +149,7 @@ int main(int argc, char **argv)
         model->cudaFreeUnnecessary();
     }
     model->init_workspace();
-    model->train(train_X, train_Y, 0.03f, n_train, 25, pre_allocate_gpu);
+    model->train(train_X, train_Y, 0.03f, n_train, 5, pre_allocate_gpu);
 
     // Load test set
     int n_test;

@@ -1,5 +1,5 @@
 # Layup-HP3
-This is the implementation of the [Layup](https://dl.acm.org/doi/10.1145/3357238) paper as part of our Semester Term Project for "High Performance Parallel Programming" for the class of Spring 2021. 
+This is the implementation of the [Layup](https://dl.acm.org/doi/10.1145/3357238) paper as part of our Semester Term Project for "High Performance Parallel Programming" for the class of Spring 2022. 
 
 ## File Structure
 
@@ -50,4 +50,3 @@ To run any of the baseline add the following flag :
 --pag   # To preallocate GPU Memory.
 --tel   # To transfer every layer to CPU.
 ```
-Note :  To remove the logging/printing of average iteration time, please set the flag to 0 in the following line https://github.com/ShahRutav/Layup-HP3/blob/db3290722479105069d2ba652194e8b4ecd71057/layup/src/model.cpp#L19

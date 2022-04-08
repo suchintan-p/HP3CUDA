@@ -222,7 +222,6 @@ void Model::train(const float *train_X, float *train_Y, float lr, int n_examples
                     printf("Average time for one iteration: %f\n", time_taken/(curr_batch+1));
             #endif
         }
-        loss = 
         std::cout << "Loss: " << loss / n_batches;
         std::cout << ",\tAccuracy: " << (100 * acc / n_batches);
         std::cout << std::endl << std::endl;
@@ -420,7 +419,7 @@ void Model::train_on_batch(const float *batch_X, float *batch_Y, float lr,float 
     for (it = this->layers->begin(); it != this->layers->end(); ++it)
         (*it)->forward_pass();
     (*loss) += (*this->layers->rbegin())->get_loss();
-    (*acc) +d= (*this->layers->rbegin())->get_accuracy();
+    (*acc) += (*this->layers->rbegin())->get_accuracy();
 
     // Do a backward pass through every layer
     std::vector<Layer *>::reverse_iterator rit;
@@ -617,7 +616,7 @@ void Model::copy_input_batch(const float *batch_X)
 {
     Layer *input = layers->front();
     int in_size = get_output_batch_size(input);
-    CUDA_CALL( cudaMemcpyAsync(input->get_output_fwd(), batch_X,
+    CUDA_CALL(cudaMemcpyAsync(input->get_output_fwd(), batch_X,
         in_size * sizeof(float), cudaMemcpyHostToDevice) );
 }
 

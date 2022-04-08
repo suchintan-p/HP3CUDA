@@ -37,7 +37,7 @@ public:
     void cudaFreeUnnecessary();
 private:
     void profile_on_batch(const float *batch_X, float *batch_Y, float lr, int transfer_every_layer);
-    void train_on_batch(const float *batch_X, float *batch_Y, float lr);
+    void train_on_batch(const float *batch_X, float *batch_Y, float lr,float* loss,float* acc);
     void train_on_batch_forward(const float *batch_X, float *batch_Y, float lr);
     void train_on_batch_backward(const float *batch_X, float *batch_Y, float lr, float *acc, float *loss);
     float *predict_on_batch(const float *batch_X);

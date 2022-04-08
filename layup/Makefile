@@ -1,5 +1,3 @@
-# CS 179 Labs 5-6 Makefile
-# Written by Aadyot Bhatnagar, 2018
 CXXFLAGS += -w -std=c++14
 
 # Input Names
@@ -34,13 +32,14 @@ else
 endif
 
 NVCC_FLAGS += -g -dc -Wno-deprecated-gpu-targets --std=c++11 \
-	      --expt-relaxed-constexpr
+	      --expt-relaxed-constexpr -arch=sm_37
 NVCC_INCLUDE =
 NVCC_CUDA_LIBS = 
 NVCC_GENCODES = -gencode arch=compute_50,code=sm_50 \
 		-gencode arch=compute_52,code=sm_52 \
 		-gencode arch=compute_60,code=sm_60 \
-		-gencode arch=compute_61,code=sm_61
+		-gencode arch=compute_61,code=sm_61 \
+    -gencode=arch=compute_37,code=sm_37
 
 # ------------------------------------------------------------------------------
 
