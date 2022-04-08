@@ -50,7 +50,7 @@ CUDA_LINK_FLAGS = -dlink -Wno-deprecated-gpu-targets
 
 # C++ Compiler and Flags
 GPP = g++
-FLAGS = -g -Wall -D_REENTRANT -std=c++14 -pthread
+FLAGS = -g -Wall -D_REENTRANT -pthread
 INCLUDE = -I$(CUDA_INC_PATH)
 CUDA_LIBS = -L$(CUDA_LIB_PATH) -lcudart -lcufft -lcublas -lcudnn -lcurand
 
