@@ -7,14 +7,12 @@ This is the implementation of the [Layup](https://dl.acm.org/doi/10.1145/3357238
 cd layup
 make
 ```
-
 ## Running Instructions
 
 ### To run the VGG Model : 
 ```
 bin/vggnet --dir ./../data -b 20
 ```
-
 ### To run a simple Conv-Net : 
 ```
 bin/conv-neuralnet --dir ./../data -b 20
@@ -23,7 +21,6 @@ bin/conv-neuralnet --dir ./../data -b 20
 ```
 bin/dense-neuralnet --dir ./../data -b 20
 ```
-
 To run any of the baseline add the following flag : 
 ```
 --pag   # To preallocate GPU Memory.
