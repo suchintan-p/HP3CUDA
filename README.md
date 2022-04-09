@@ -19,6 +19,10 @@ bin/vggnet --dir ./../data -b 20
 ```
 bin/conv-neuralnet --dir ./../data -b 20
 ```
+### To run a simple Dense-Net : 
+```
+bin/dense-neuralnet --dir ./../data -b 20
+```
 
 To run any of the baseline add the following flag : 
 ```
