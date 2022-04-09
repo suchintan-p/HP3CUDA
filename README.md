@@ -23,6 +23,6 @@ bin/dense-neuralnet --dir ./../data -b 20
 ```
 To run any of the baseline add the following flag : 
 ```
---pag   # To preallocate GPU Memory.
---tel   # To transfer every layer to CPU.
+--pag   # To preallocate GPU Memory, Baseline.
+--tel   # Perform CPU_GPU transfer on every layer
 ```
