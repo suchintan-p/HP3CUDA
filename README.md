@@ -1,5 +1,5 @@
 # Layup-HP3
-Colab notebook: https://colab.research.google.com/drive/1Yyv4FbPhyGMwwXpUV8k3lLY_iKcJivzj?usp=sharing
+Colab notebook: https://colab.research.google.com/drive/1h3tyGa_uc6ig4cPR-oIUGrOVVg99Yeo1?usp=sharing
 This is the implementation of the [Layup](https://dl.acm.org/doi/10.1145/3357238) paper as part of our Semester Term Project for "High Performance Parallel Programming" for the class of Spring 2022. 
 
 ## Compilation 
