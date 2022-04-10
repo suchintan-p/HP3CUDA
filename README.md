@@ -23,12 +23,10 @@ The following should be run inside "HP3CUDA/" directory.
 ```
 ./layup/bin/dense-neuralnet --dir data --act relu -b 100
 ```
--b to specify batch size (default is 10)
-
---act to specify activation layer type (default is relu)
-
-To run any of the baseline add the following flag : 
+Additional flags u can include : 
 ```
 --pag   # To preallocate GPU Memory.
 --tel   # Perform CPU_GPU transfer on every layer
+-b to specify batch size (default is 10)
+--act to specify activation layer type (default is relu)
 ```
