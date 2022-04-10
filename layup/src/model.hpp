@@ -6,14 +6,15 @@
 #include <cudnn.h>
 #include "layers.hpp"
 
-typedef struct _result {
+typedef struct _result
+{
     float loss;
     float acc;
     float *predictions;
 } result;
 
-
-class Model {
+class Model
+{
 public:
     Model(int n, int c, int h = 1, int w = 1);
     ~Model();
@@ -22,28 +23,26 @@ public:
     void init_workspace();
 
     void train(const float *train_X, float *train_Y, float lr,
-        int num_examples, int n_epochs, int pre_allocate_gpu);
-    
-    void profile(const float *train_X, float *train_Y, float lr,
-        int num_examples, int n_epochs, int transfer_every_layer);
+               int num_examples, int n_epochs, int pre_allocate_gpu);
+
+    void profile(const float *train_X, float *train_Y,
+                 int transfer_every_layer);
 
     float *predict(const float *pred_X, int num_examples);
     result *evaluate(const float *eval_X, float *eval_Y, int num_examples);
-    
-    std::vector<int> checkpoints;
-    std::vector<Layer *> ckpt_pointers;
 
-    std::vector<float*> cpu_memory;
+    std::vector<int> checkpoints;
+
+    std::vector<float *> cpu_memory;
     void cudaFreeUnnecessary();
+
 private:
-    void profile_on_batch(const float *batch_X, float *batch_Y, float lr, int transfer_every_layer);
+    void profile_on_batch(const float *batch_X, float *batch_Y, int transfer_every_layer);
     void train_on_batch(const float *batch_X, float *batch_Y, float lr);
     void train_on_batch_forward(const float *batch_X, float *batch_Y, float lr);
     void train_on_batch_backward(const float *batch_X, float *batch_Y, float lr, float *acc, float *loss);
     float *predict_on_batch(const float *batch_X);
     result *evaluate_on_batch(const float *batch_X, float *batch_Y);
-    
-    
 
     void copy_input_batch(const float *batch_X);
     void copy_output_batch(const float *batch_Y);
