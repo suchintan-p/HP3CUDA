@@ -25,8 +25,8 @@ The following should be run inside "HP3CUDA/" directory.
 ```
 Additional flags u can include : 
 ```
---pag   # To preallocate GPU Memory.
---tel   # Perform CPU_GPU transfer on every layer
+-pag   # To preallocate GPU Memory.
+-tel   # Perform CPU_GPU transfer on every layer
 -b to specify batch size (default is 10)
 --act to specify activation layer type (default is relu)
 ```
