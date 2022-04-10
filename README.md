@@ -8,19 +8,25 @@ cd layup
 make
 ```
 ## Running Instructions
+You can follow the same steps as given in the notebook. Alternatively you can run the following:
 
+The following should be run inside "HP3CUDA/" directory.
 ### To run the VGG Model : 
 ```
-bin/vggnet --dir ./../data -b 20
+ ./layup/bin/vggnet --dir data --act relu -b 100 
 ```
 ### To run a simple Conv-Net : 
 ```
-bin/conv-neuralnet --dir ./../data -b 20
+./layup/bin/conv-neuralnet --dir data --act relu -b 100
 ```
 ### To run a simple Dense-Net : 
 ```
-bin/dense-neuralnet --dir ./../data -b 20
+./layup/bin/dense-neuralnet --dir data --act relu -b 100
 ```
+-b to specify batch size (default is 10)
+
+--act to specify activation layer type (default is relu)
+
 To run any of the baseline add the following flag : 
 ```
 --pag   # To preallocate GPU Memory.
